@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Vericaremos si tu contraseña es fuerte</h1>
+    <p class="lead">Una contraseña fuerte debe tener:<br>
+        El primer carácter debe ser  una letra mayúscula.<br>
+        Los siguientes 3 caracteres son números.<br>
+        Después los siguientes caracteres deben ser letras minúsculas.<br>        
+        Y los últimos 3 caracteres deben ser caracteres especiales. </p>
+    <hr class="my-4">
+    <p>A continuación ingresa tu contraseña:</p>
+    <form action="/" method="POST" id="formulary">
+        <div class="form-group">
+          <input type="password" class="form-control" id="contrasena" name="contrasena">
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnVerificar">Verificar contraseña</button>
+      </form>
+</div>
+
+{% endblock %}
